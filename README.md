@@ -5,7 +5,7 @@ This is a React application which uses Yelp Fusion API. The application allows u
 
 ## How to run the Application: ##
 
-- clone the app repository: git clone repo-url
+- clone the app repository: git clone https://github.com/rpanch1/yelp-app.git
 - navigate to the project folder: cd yelp-app/
 - install dependencies: npm install
 
