@@ -16,7 +16,7 @@ API's responses. So you will either need to use the cors-anywhere demo server or
 
 ### Using the Demo Server ###
 - Unlock the demo server by going to cors-anywhere.herokuapp.com and clicking the 'Request temporary access' button
-- In the src/yelp-api/authentication.js file, the API requests should be prefixed by the CORS_ANYWHER url by default.
+- In the src/yelp-api/authentication.js file, the API requests should be prefixed by the CORS_URL by default.
 - The demo server only allows 50 requests per hour so the app will not work after those limited amount of requests. So, the alternative is to create a local server.
 
 
