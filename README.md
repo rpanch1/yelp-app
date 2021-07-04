@@ -25,7 +25,7 @@ API's responses. So you will either need to use the cors-anywhere demo server or
 - navigate to the folder: cd cors-anywhere/
 - install dependencies: npm install
 - start server: node server.js
-- In the app project, go to authentication.js file and replace the prefix CORS_URL with LOCAL_HOST for the BUSINESS_SEARCH_URL and save file.
+- In the app project, go to authentication.js file and replace the prefix CORS_URL with LOCAL_HOST in the BUSINESS_SEARCH_URL variable and save file.
 
 
 ### After the demo server or the local server is setup ###
