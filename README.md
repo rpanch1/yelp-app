@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+This is a React application which uses Yelp Fusion API. The application allows users to search for businesses in Naperville and see more details about the selected business.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+How to run the Application: 
 
-In the project directory, you can run:
+- clone the app repository: 
+    git clone repo-url
+- navigate to the project folder: 
+    cd yelp-app/
+- install dependencies: 
+    npm install
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The Application uses CORS Anywhere since the Yelp API will not allow the app's frontend JavaScript code to access the 
+API's responses. So you will either need to use the cors-anywhere demo server or create a local server to handle the proxy requests.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+Using the Demo Server:
+- Unlock the demo server by going to cors-anywhere.herokuapp.com and clicking the 'Request temporary access' button
+- In the src/yelp-api/authentication.js file, the API requests should be prefixed by the CORS_ANYWHER url by default.
+- The demo server only allows 50 requests per hour so the app will not work after those limited amount of requests. So, the alternative is to create a local server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Using local server:
+- clone the cors-anywhere repository: 
+    git clone https://github.com/Rob--W/cors-anywhere.git
+- navigate to the folder: 
+    cd cors-anywhere/
+- install dependencies:
+    npm install
+- start server:
+    node server.js
+- In the app project, go to authentication.js file and replace the prefix CORS_URL with LOCAL_HOST for the BUSINESS_SEARCH_URL and save file.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+After the demo server or the local server is setup:
+- start app: 
+    npm start
