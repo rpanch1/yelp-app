@@ -31,3 +31,8 @@ API's responses. So you will either need to use the cors-anywhere demo server or
 ### After the demo server or the local server is setup ###
 - start app: 
     npm start
+    
+### Screenshots ###
+![image](https://user-images.githubusercontent.com/45925293/129780607-32d0f0bb-251d-4ab6-ac7f-c383fc3d9051.PNG)
+![image](https://user-images.githubusercontent.com/45925293/129780614-d30f811c-dbcc-4832-8521-e97a4c323b3a.PNG)
+![image](https://user-images.githubusercontent.com/45925293/129780626-50633783-5c41-4ffd-b1ac-0f234d0adc28.PNG)
